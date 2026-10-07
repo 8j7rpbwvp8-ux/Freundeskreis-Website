@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =========================================
-       MOBILE NAVIGATION
+       MOBILE NAVIGATION test
        ========================================= */
 
     const menuToggle = document.querySelector(".menu-toggle");
