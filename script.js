@@ -93,36 +93,6 @@ if (searchForm && searchInput) {
 
 }
 
-    /* =========================================
-       FORMULAR
-       ========================================= */
-
-    const contactForm = document.querySelector("#contact-form");
-    const formMessage = document.querySelector("#form-message");
-
-    if (contactForm) {
-
-        contactForm.addEventListener("submit", (event) => {
-
-            // Wenn das Formular über mailto verschickt wird,
-            // soll die normale Formularfunktion erhalten bleiben.
-            if (contactForm.getAttribute("action")) {
-                return;
-            }
-
-            event.preventDefault();
-
-            if (formMessage) {
-                formMessage.textContent =
-                    "Vielen Dank! Ihre Nachricht wurde erfolgreich übermittelt.";
-                formMessage.classList.add("show");
-            }
-
-            contactForm.reset();
-        });
-
-    }
-
 
     /* =========================================
        SCROLL-REVEAL
