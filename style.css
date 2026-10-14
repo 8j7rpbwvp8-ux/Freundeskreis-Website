@@ -806,20 +806,6 @@ footer {
  color: #fff;
 }
 /* =========================
-  ANIMATIONEN
-========================= */
-.reveal {
- opacity: 0;
- transform: translateY(22px);
- transition:
-   opacity .7s ease,
-   transform .7s ease;
-}
-.reveal.visible {
- opacity: 1;
- transform: none;
-}
-/* =========================
   TABLET
 ========================= */
 @media (max-width: 1000px) {
