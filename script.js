@@ -32,68 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-    /* =========================================
-   SUCHFUNKTION
-   ========================================= */
-
-const searchForm = document.querySelector(".search");
-const searchInput = document.querySelector(".search input");
-
-if (searchForm && searchInput) {
-
-    searchForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const searchTerm = searchInput.value.trim().toLowerCase();
-
-        // Nichts eingegeben
-        if (searchTerm === "") {
-            searchInput.focus();
-            return;
-        }
-
-        // Alle relevanten Inhalte durchsuchen
-        const elements = document.querySelectorAll(
-            "main h1, main h2, main h3, main p, main li"
-        );
-
-        let found = false;
-
-        // Alte Markierungen entfernen
-        elements.forEach(element => {
-            element.classList.remove("search-highlight");
-        });
-
-        // Nach Suchbegriff suchen
-        for (const element of elements) {
-
-            const text = element.textContent.toLowerCase();
-
-            if (text.includes(searchTerm)) {
-
-                element.classList.add("search-highlight");
-
-                element.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
-
-                found = true;
-                break;
-            }
-        }
-
-        // Wenn nichts gefunden wurde
-        if (!found) {
-            alert("Leider wurde kein passender Inhalt gefunden.");
-        }
-
-    });
-
-}
-
-
     /* =========================================
        SCROLL-REVEAL
        ========================================= */
