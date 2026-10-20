@@ -58,20 +58,6 @@
     border-radius: 5px;
   }
 }
-.back-to-top {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 10px 16px;
-  color: #002B3C;
-  border: 1px solid #9BB9C4;
-  border-radius: 6px;
-  font-size: 14px;
-  transition: background-color 0.2s ease;
-}
-
-.back-to-top:hover {
-  background-color: #EAF1F4;
-}
 
 /* Für das einseitige Impressum/*
 .impressum-seite {
