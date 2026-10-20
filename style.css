@@ -8,7 +8,8 @@
  --muted: #657277;
  --dark: #18231f;
  --hover: #6788A1;
- --background: #E6E7F0;
+ --background: #F5F5F2;
+ --special-background: #314B63;
 }
 /* =========================
   GRUNDLAGEN test Test
@@ -83,7 +84,7 @@ textarea:focus-visible {
  outline: 3px solid var(--blue);
  outline-offset: 4px;
 }
-/* Touch-Flächen */
+/* Touch-Flï¿½chen */
 button,
 .nav a,
 .nav-cta,
@@ -102,7 +103,7 @@ button,
  align-items: center;
  justify-content: space-between;
  border-bottom: 1px solid var(--line);
- background: #314B63;
+ background:var(--special-background);
  backdrop-filter: blur(14px);
  position: sticky;
  top: 0;
@@ -166,7 +167,7 @@ button,
  color: #fff !important;
  background: var(--ink);
 }
-/* Mobile Menü Button */
+/* Mobile Menï¿½ Button */
 .menu-toggle {
  display: none;
  border: 1px solid transparent;
@@ -252,12 +253,12 @@ h2 em {
  transform: translateY(-2px);
 }
 .button-dark {
- background: var(--ink);
- color: #fff;
+ background: var(--special-background);
+ color: #F5F5F2;
 }
 .button-light {
- background: #fff;
- color: var(--ink);
+ background: #F5F5F2;
+ color: var(--special-background);
 }
 .button-outline {
  border: 1px solid var(--ink);
@@ -283,21 +284,6 @@ h2 em {
  position: absolute;
  border-radius: 50%;
  border: 1px solid #bfc5ba;
-}
-.circle-one {
- width: 440px;
- height: 440px;
- right: 0;
- top: 30px;
- background: var(--accent);
- border: 0;
-}
-.circle-two {
- width: 360px;
- height: 360px;
- right: 95px;
- top: 70px;
- border: 1px solid rgba(24, 35, 31, .25);
 }
 .art-card {
  position: absolute;
@@ -350,7 +336,7 @@ h2 em {
   Unser Verein
 ========================= */
 .intro {
- background: #9CAFC0;
+ background:var(--background);
 }
 .intro-grid,
 .contact-grid {
@@ -400,7 +386,7 @@ h2 em {
 ========================= */
 
 .vorstand {
- background: #9CAFC0;
+ background:var(--background);
 }
 .vorstand-list {
  margin-top: 60px;
@@ -468,19 +454,35 @@ h2 em {
  border-radius: 999px;
  font-size: 13px;
  font-weight: 700;
+ color: var(--background);
+ background:var(--special-background);
  transition:
    background-color .25s ease,
    color .25s ease;
 }
 .satzung-link:hover {
- background: var(--ink);
- color: white;
+ background: #F5F5F2;
+ color: var(--ink);
+}
+/* PDF-Anzeige */
+
+.pdf-anzeige {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 650px;
+  max-height: 1100px;
+  border: 1px solid #D5E2E7;
+  border-radius: 8px;
+  background-color: #EDF3F6;
+  box-shadow: 0 8px 24px rgba(0, 43, 60, 0.08);
+  box-sizing: border-box;
 }
 /* =========================
   ANGEBOT
 ========================= */
 .arrow {
-	background: #9CAFC0;
+	background:var(--background);
 }
 
 .arrow-list {
@@ -523,7 +525,7 @@ h2 em {
  justify-content: space-between;
  align-items: center;
  gap: 40px;
- background: #9CAFC0;
+ background:var(--background);
 }
 .membership h2 {
  font-size: clamp(42px, 5vw, 70px);
@@ -538,7 +540,7 @@ h2 em {
   Termine
 ========================= */
 .termin{
- background: #9CAFC0;
+ background:var(--background);
 }
 .verein-termine {
  margin-top: 30px;
@@ -547,13 +549,13 @@ h2 em {
  justify-content: space-between;
  align-items: center;
  gap: 40px;
- background: #9CAFC0; 
+ background:var(--background); 
 }
 .termine-label {
  font-size: 10px;
  text-transform: uppercase;
  letter-spacing: .15em;
- background: #9CAFC0;;
+ background:var(--background);;
 }
 .termine-text h3 {
  font-size: 28px;
@@ -568,10 +570,10 @@ h2 em {
 }
 
 /* =========================
- Spendenmöglichkeit
+ Spendenmï¿½glichkeit
 ========================= */
 .spende {
- background: #9CAFC0;
+ background:var(--background);
 }
 .spende-grid,
 .spende-grid {
@@ -606,7 +608,7 @@ h2 em {
   KONTAKT
 ========================= */
 .contact {
- background: #9CAFC0;
+ background:var(--background);
 }
 .contact-lead {
  color: var(--muted);
@@ -641,7 +643,7 @@ h2 em {
   IMPRESSUM
 ========================= */
 .impressum {
- background: #9CAFC0;
+ background:var(--background);
 }
 .impressum-content {
  max-width: 850px;
@@ -680,7 +682,7 @@ h2 em {
   DATENSCHUTZ
 ========================= */
 .datenschutz {
- background: #9CAFC0;
+ background:var(--background);
 }
 .datenschutz-content {
  max-width: 850px;
@@ -760,7 +762,7 @@ h2 em {
   FOOTER
 ========================= */
 footer {
- background: var(--ink);
+ background:var(--special-background);
  color: #fff;
  padding: 55px 7vw 25px;
 }
@@ -780,7 +782,7 @@ footer {
  display: flex;
  gap: 25px;
  font-size: 12px;
- color: #cbd1cc;
+ color: #F5F5F2;
  flex-wrap: wrap;
 }
 .footer-links a {
@@ -794,11 +796,11 @@ footer {
  display: flex;
  justify-content: space-between;
  gap: 20px;
- color: #9fa9a2;
+ color: #F5F5F2;
  font-size: 10px;
 }
 .footer-bottom a:hover {
- color: #fff;
+ color:var(--hover);
 }
 /* =========================
   TABLET
@@ -912,7 +914,7 @@ footer {
    margin-top: 8px;
  }
  /*
-    Suche im mobilen Menü
+    Suche im mobilen Menï¿½
  */
  .search-wrapper {
    width: 100%;
@@ -1121,7 +1123,7 @@ footer {
 }
 /* =========================
   REDUZIERTE BEWEGUNG
-  Für Nutzer, die Animationen
+  Fï¿½r Nutzer, die Animationen
   deaktiviert haben.
 ========================= */
 @media (prefers-reduced-motion: reduce) {
