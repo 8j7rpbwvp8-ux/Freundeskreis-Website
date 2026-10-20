@@ -413,12 +413,11 @@ h2 em {
   SATZUNG
 ========================= */
 .verein-satzung {
- margin-top: 30px;
- padding-top: 30px;
+ margin-top: 1px;
  display: flex;
  justify-content: space-between;
  align-items: center;
- gap: 40px;
+ gap: 20px;
 }
 .satzung-label {
  font-size: 10px;
@@ -432,7 +431,7 @@ h2 em {
  letter-spacing: -.03em;
 }
 .satzung-text p {
- color: var(--muted);
+ color: var(--ink);
  max-width: 550px;
  margin: 0;
  font-size: 14px;
