@@ -7,6 +7,8 @@
  --line: #D9E1E3;
  --muted: #657277;
  --dark: #18231f;
+ --hover: #6788A1;
+ --background: #E6E7F0;
 }
 /* =========================
   GRUNDLAGEN test
@@ -100,7 +102,7 @@ button,
  align-items: center;
  justify-content: space-between;
  border-bottom: 1px solid var(--line);
- background: rgba(245, 243, 237, .92);
+ background: #314B63;
  backdrop-filter: blur(14px);
  position: sticky;
  top: 0;
@@ -130,6 +132,7 @@ button,
  width: 180px;
  height: auto;
  display: block;
+ padding: 5px 0px;
 }
 /* Navigation */
 .nav {
@@ -139,14 +142,14 @@ button,
  font-size: 13px;
 }
 .nav a:not(.nav-cta) {
- color: #4d5752;
+ color:#F5F5F2;
  min-height: 44px;
  display: inline-flex;
  align-items: center;
 }
 .nav a:not(.nav-cta):hover,
 .footer-links a:hover {
- color: var(--ink);
+ color:var(--hover);
 }
 .nav-cta {
  color: var(--ink) !important;
@@ -192,6 +195,7 @@ button,
  align-items: center;
  overflow: hidden;
  position: relative;
+ background:var(--background);
 }
 .hero-copy {
  max-width: 680px;
@@ -204,7 +208,7 @@ button,
  font-weight: 700;
 }
 .eyebrow {
- color: #65706b;
+ color:var(--ink);
  margin-bottom: 28px;
 }
 .hero h1 {
@@ -222,7 +226,7 @@ h2 em {
 .hero-text {
  font-size: 18px;
  max-width: 580px;
- color: #4f5a55;
+ color:var(--ink);
 }
 .hero-actions {
  display: flex;
@@ -297,7 +301,7 @@ h2 em {
 }
 .art-card {
  position: absolute;
- background: var(--white);
+ background: #9CAFC0;
  padding: 24px;
  box-shadow: 0 20px 50px rgba(24, 35, 31, .1);
  width: 190px;
@@ -339,14 +343,14 @@ h2 em {
  padding: 120px 7vw;
 }
 .section-label {
- color: #7b847e;
+ color:var(--ink);
  margin-bottom: 45px;
 }
 /* =========================
   Unser Verein
 ========================= */
 .intro {
- background: #fff;
+ background: #9CAFC0;
 }
 .intro-grid,
 .contact-grid {
@@ -365,7 +369,7 @@ h2 em {
 }
 .large-copy {
  font-size: 18px;
- color: #4e5954;
+ color:var(--ink);
  max-width: 600px;
 }
 .large-copy p {
@@ -394,9 +398,9 @@ h2 em {
 /* =========================
   VORSTAND
 ========================= */
-/*
+
 .vorstand {
- background: #fff;
+ background: #9CAFC0;
 }
 .vorstand-list {
  margin-top: 60px;
@@ -411,7 +415,7 @@ h2 em {
 }
 .vorstand-number {
  font-size: 11px;
- color: var(--muted);
+ color: var(--ink);
  letter-spacing: .12em;
 }
 .vorstand-person h3 {
@@ -421,10 +425,10 @@ h2 em {
 }
 .vorstand-person p {
  margin: 0;
- color: var(--muted);
+ color: var(--ink);
  font-size: 14px;
 }
-*/
+
 /* =========================
   SATZUNG
 ========================= */
@@ -475,6 +479,10 @@ h2 em {
 /* =========================
   ANGEBOT
 ========================= */
+.arrow {
+	background: #9CAFC0;
+}
+
 .arrow-list {
  margin-top: 30px;
 }
@@ -515,6 +523,7 @@ h2 em {
  justify-content: space-between;
  align-items: center;
  gap: 40px;
+ background: #9CAFC0;
 }
 .membership h2 {
  font-size: clamp(42px, 5vw, 70px);
@@ -528,6 +537,9 @@ h2 em {
 /* =========================
   Termine
 ========================= */
+.termin{
+ background: #9CAFC0;
+}
 .verein-termine {
  margin-top: 30px;
  padding-top: 30px;
@@ -535,12 +547,13 @@ h2 em {
  justify-content: space-between;
  align-items: center;
  gap: 40px;
+ background: #9CAFC0; 
 }
 .termine-label {
  font-size: 10px;
  text-transform: uppercase;
  letter-spacing: .15em;
- color: var(--muted);
+ background: #9CAFC0;;
 }
 .termine-text h3 {
  font-size: 28px;
@@ -553,30 +566,12 @@ h2 em {
  margin: 0;
  font-size: 14px;
 }
-.termine-link {
- min-width: 180px;
- min-height: 48px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 17px 20px;
- border: 1px solid var(--ink);
- border-radius: 999px;
- font-size: 13px;
- font-weight: 700;
- transition:
-   background-color .25s ease,
-   color .25s ease;
-}
-.termine-link:hover {
- background: var(--ink);
- color: white;
-}
+
 /* =========================
  Spendenmöglichkeit
 ========================= */
 .spende {
- background: #fff;
+ background: #9CAFC0;
 }
 .spende-grid,
 .spende-grid {
@@ -611,7 +606,7 @@ h2 em {
   KONTAKT
 ========================= */
 .contact {
- background: var(--paper);
+ background: #9CAFC0;
 }
 .contact-lead {
  color: var(--muted);
@@ -646,7 +641,7 @@ h2 em {
   IMPRESSUM
 ========================= */
 .impressum {
- background: #fff;
+ background: #9CAFC0;
 }
 .impressum-content {
  max-width: 850px;
@@ -685,7 +680,7 @@ h2 em {
   DATENSCHUTZ
 ========================= */
 .datenschutz {
- background: #fff;
+ background: #9CAFC0;
 }
 .datenschutz-content {
  max-width: 850px;
