@@ -11,6 +11,28 @@
    Freundeskreis der Fachhochschule für Verwaltung und Dienstleistung e.V.
  </title>
  <link rel="stylesheet" href="style.css">
+ <style>
+  .pdf-anzeige {
+   display: block;
+   width: 100%;
+   height: 85vh;
+   min-height: 650px;
+   max-height: 1100px;
+   border: 1px solid #D5E2E7;
+   border-radius: 8px;
+   background-color: #EDF3F6;
+   box-shadow: 0 8px 24px rgba(0, 43, 60, 0.08);
+   box-sizing: border-box;
+  }
+  @media (max-width: 680px) {
+   .pdf-anzeige {
+    height: 75vh;
+    min-height: 500px;
+    max-height: 800px;
+    border-radius: 5px;
+   }
+  }
+ </style>
 </head>
 <body>
  <!-- =========================
@@ -401,7 +423,14 @@
      </div>
       <div class="verein-termine">
           
-        <object data="terminkalender.pdf">
+        <object data="terminkalender.pdf"
+          class="pdf-anzeige"
+          type="application/pdf"
+          aria-label="Terminkalender als PDF">
+          <p>
+            Die PDF kann in diesem Browser nicht angezeigt werden.
+            <a href="terminkalender.pdf" download>Kalender herunterladen</a>
+          </p>
         </object>
     	</div>
  
