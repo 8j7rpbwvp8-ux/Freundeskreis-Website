@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
 :root {
  --ink: #002B33;
- --blue: #002B66;
- --paper: #FFFFFF;
- --white: #FFFFFF;
- --line: #D9E1E3;
- --muted: #657277;
- --dark: #18231f;
  --hover: #6788A1;
  --background: #F5F5F2;
  --special-background: #314B63;
@@ -798,7 +792,7 @@ footer {
  align-items: center;
 }
 .footer-bottom {
- border-top: 1px solid #3b4640;
+ border-top: 1px solid var(--background);
  padding-top: 22px;
  display: flex;
  justify-content: space-between;
@@ -919,33 +913,6 @@ footer {
  .nav-cta {
    width: 100%;
    margin-top: 8px;
- }
- /*
-    Suche im mobilen Men�
- */
- .search-wrapper {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: stretch;
- }
- #search-toggle {
-   width: 100%;
-   justify-content: flex-start;
-   padding-left: 0;
-   height: 48px;
- }
- .search-box {
-   position: static;
-   width: 100%;
-   margin: 4px 0 8px;
-   box-shadow: none;
-   background: #fff;
- }
- .search-results {
-   top: 72px;
-   width: 90vw;
-   max-height: 65vh;
  }
  /* Hero */
  .hero {
