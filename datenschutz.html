@@ -15,8 +15,15 @@
   <title>
     Freundeskreis der Fachhochschule für Verwaltung und Dienstleistung e.V.
   </title>
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="impressum und datenschutz.css">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    main#start h1 {
+      padding: 0 24px !important;
+      margin-top: 32px;
+    }
+  </style>
 
 </head>
 
@@ -111,9 +118,82 @@
 <p> <main id="start">
 <h1>Datenschutzerklärung</h1>
 
-<object data="Datenschutzerklärung.pdf">
+<object  class="pdf-anzeige"
+    data="Datenschutzerklärung.pdf"
+    type="application/pdf">
+    aria-label="Datenschutzerklärung als PDF">
         </object>
-
+        
+<a class="back-to-top" href="#start">
+  ↑ Zurück nach oben
+</a>
+ 	<!-- =========================   FOOTER
+ ========================== -->
+ <footer>
+   <div class="footer-top">
+     <div class="brand footer-brand">
+       <img
+         src="Logo.png"
+         alt="Logo des Freundeskreises"
+       >
+       <span>
+         Freundeskreis<br> 
+         <small>
+           der Fachhochschule für Verwaltung und Dienstleistung e.V.
+         </small>
+       </span>
+     </div>
+     <nav
+       class="footer-links"
+       aria-label="Footer-Navigation"
+     >
+       <a href="#verein">
+       Unser Verein
+     </a>
+     <a href="#vorstand">
+       Vorstand
+     </a>
+     <a href="#satzung">
+       Satzung
+     </a>
+    
+	  <a href="#angebot">
+       Unsere Angebote
+     </a>
+    
+     <a href="#mitglied">
+       Mitglied werden
+     </a>
+    
+     <a href="#Termine">
+       Termine
+     </a>
+    
+     <a href="#spendemöglichkeiten">
+       Spendemöglichkeiten
+     </a>
+    
+     <a href="#kontakt">
+       Kontakt
+     </a>
+    
+     </nav>
+   </div>
+   <div class="footer-bottom">
+     <span>
+       © Freundeskreis der Fachhochschule für Verwaltung und Dienstleistung e.V.
+     </span>
+     <span>
+       <a href="impressum.html">
+         Impressum
+       </a>
+       ·
+       <a href="datenschutz.html">
+         Datenschutz
+       </a>
+     </span>
+   </div>
+ </footer>
 </main>
 </body>
 </html>

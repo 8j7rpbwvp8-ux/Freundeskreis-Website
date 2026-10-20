@@ -1,0 +1,79 @@
+
+/* =========================
+   DATENSCHUTZSEITE
+========================= */
+
+.datenschutz-seite {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 0 60px
+}
+
+/* Überschrift */
+
+.datenschutz-seite h1 {
+  color: #002B3C;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin: 0 0 35px;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+/* PDF-Anzeige */
+
+.pdf-anzeige {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 650px;
+  max-height: 1100px;
+  border: 1px solid #D5E2E7;
+  border-radius: 8px;
+  background-color: #EDF3F6;
+  box-shadow: 0 8px 24px rgba(0, 43, 60, 0.08);
+  box-sizing: border-box;
+}
+
+/* Smartphone */
+
+@media (max-width: 680px) {
+  .datenschutz-seite {
+    width: 92%;
+    padding: 35px 0 45px;
+  }
+
+  .datenschutz-seite h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+  }
+
+  .pdf-anzeige {
+    height: 75vh;
+    min-height: 500px;
+    max-height: 800px;
+    border-radius: 5px;
+  }
+}
+
+/* Für das einseitige Impressum/*
+.impressum-seite {
+width: 90%;
+max-width: 1200px;
+}
+
+@media (max-width: 680px) {
+.datenschutz-seite,
+.impressum-seite {
+width: 92%;
+padding: 30px 0 40px;
+}
+
+.pdf-anzeige {
+	height: 75vh;
+	min-height: 500px;
+}
+}
