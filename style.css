@@ -12,7 +12,7 @@
  --special-background: #314B63;
 }
 /* =========================
-  GRUNDLAGEN test  test
+  GRUNDLAGEN 
 ========================= */
 * {
  box-sizing: border-box;
@@ -464,20 +464,7 @@ h2 em {
  background: #F5F5F2;
  color: var(--ink);
 }
-/* PDF-Anzeige */
 
-.pdf-anzeige {
-  display: block;
-  width: 100%;
-  height: 85vh;
-  min-height: 650px;
-  max-height: 1100px;
-  border: 1px solid #D5E2E7;
-  border-radius: 8px;
-  background-color: #EDF3F6;
-  box-shadow: 0 8px 24px rgba(0, 43, 60, 0.08);
-  box-sizing: border-box;
-}
 /* =========================
   ANGEBOT
 ========================= */
@@ -568,7 +555,27 @@ h2 em {
  margin: 0;
  font-size: 14px;
 }
-
+/* PDF-Anzeige */
+.verein-termine {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 650px;
+  max-height: 1100px;
+  border: 1px solid #D5E2E7;
+  border-radius: 8px;
+  background-color: #EDF3F6;
+  box-shadow: 0 8px 24px rgba(0, 43, 60, 0.08);
+  box-sizing: border-box;
+}
+@media (max-width: 680px) {
+  .pdf-anzeige {
+    height: 75vh;
+    min-height: 500px;
+    max-height: 800px;
+    border-radius: 5px;
+  }
+}
 /* =========================
  Spendenm�glichkeit
 ========================= */
@@ -763,7 +770,7 @@ h2 em {
 ========================= */
 footer {
  background:var(--special-background);
- color: #fff;
+ color: var(--background);
  padding: 55px 7vw 25px;
 }
 .footer-top {
@@ -773,7 +780,7 @@ footer {
  padding-bottom: 55px;
 }
 .footer-brand {
- color: #fff;
+ color:var(--background);
 }
 .footer-brand img {
  width: 180px;
@@ -782,7 +789,7 @@ footer {
  display: flex;
  gap: 25px;
  font-size: 12px;
- color: #F5F5F2;
+ color:var(--background);
  flex-wrap: wrap;
 }
 .footer-links a {
@@ -796,7 +803,7 @@ footer {
  display: flex;
  justify-content: space-between;
  gap: 20px;
- color: #F5F5F2;
+ color:var(--background);
  font-size: 10px;
 }
 .footer-bottom a:hover {
