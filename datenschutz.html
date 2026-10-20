@@ -18,17 +18,10 @@
  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="impressum und datenschutz.css">
 
-  <style>
-    main#start h1 {
-      padding: 0 24px !important;
-      margin-top: 32px;
-    }
-  </style>
-
 </head>
 
 <!-- =========================
-       Buttons zurück an index.html test test
+       Buttons zurück an index.html test test tttest
   ========================== -->
 
 <body>
@@ -114,20 +107,19 @@
       
 </nav>
   </header>
-
-<p> <main id="start">
+<main id="start" class="datenschutz-seite impressum-seite">
 <h1>Datenschutzerklärung</h1>
 
-<object  class="pdf-anzeige"
-    data="Datenschutzerklärung.pdf"
-    type="application/pdf">
-    aria-label="Datenschutzerklärung als PDF">
-        </object>
-        
-<a class="back-to-top" href="#start">
-  ↑ Zurück nach oben
-</a>
- 	<!-- =========================   FOOTER
+<object 
+class="pdf-anzeige" 
+data="Datenschutzerklärung.pdf" 
+type="application/pdf"
+aria-label="Datenschutzerklärung als PDF"> 
+</object>
+
+ </main>
+<!-- =========================
+      FOOTER
  ========================== -->
  <footer>
    <div class="footer-top">
@@ -193,8 +185,7 @@
        </a>
      </span>
    </div>
- </footer>
-</main>
+</footer>
+
 </body>
 </html>
- </p>
