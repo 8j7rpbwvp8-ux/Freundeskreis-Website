@@ -608,7 +608,7 @@ h2 em {
 }
 .contact-lead {
  color: var(--muted);
- max-width: 450px;
+ max-width: 600px;
  font-size: 16px;
  margin-top: 30px;
 }
