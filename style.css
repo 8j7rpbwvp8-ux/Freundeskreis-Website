@@ -515,6 +515,32 @@ h2 em {
  font-family: var(--serif);
  margin-bottom: 30px;
 }
+.membership-link {
+ min-width: 180px;
+ min-height: 48px;
+ max-width: 300px;
+ max-height: 60px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 17px 20px;
+ border: 1px solid var(--ink);
+ border-radius: 999px;
+ font-size: 13px;
+ font-weight: 700;
+text-align: center;
+display:table-cell;
+vertical-align:middle;
+ color: var(--background);
+ background:var(--special-background);
+ transition:
+   background-color .25s ease,
+   color .25s ease;
+}
+.membership-link:hover {
+ background: #F5F5F2;
+ color: var(--ink);
+}
 /* =========================
   Termine
 ========================= */
