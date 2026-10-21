@@ -525,11 +525,6 @@ h2 em {
 .verein-termine {
  margin-top: 30px;
  padding-top: 30px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- gap: 40px;
- background:var(--background); 
 }
 .termine-label {
  font-size: 10px;
@@ -549,7 +544,7 @@ h2 em {
  font-size: 14px;
 }
 /* PDF-Anzeige */
-.verein-termine {
+.pdf-anzeige {
   display: block;
   width: 100%;
   height: 85vh;
