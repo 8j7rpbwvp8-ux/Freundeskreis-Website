@@ -511,10 +511,11 @@ h2 em {
  font-size: clamp(42px, 5vw, 70px);
  line-height: .98;
  letter-spacing: -.055em;
- margin: 12px 0 0;
+ margin-top: 12px 1px 16px;
 }
 .membership h2 em {
  font-family: var(--serif);
+ margin-bottom: 30px;
 }
 /* =========================
   Termine
