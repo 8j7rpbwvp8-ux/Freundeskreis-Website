@@ -3,34 +3,28 @@ document.addEventListener("DOMContentLoaded", () => {
     /* =========================================
        MOBILE NAVIGATION test
        ========================================= */
-
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navigation = document.querySelector("#main-navigation");
-
-    if (menuToggle && navigation) {
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navigation.classList.toggle("is-open");
-
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuToggle.setAttribute(
-                "aria-label",
-                isOpen ? "Menü schließen" : "Menü öffnen"
-            );
-        });
-
-        // Menü schließen, wenn ein Link angeklickt wird
-        const navigationLinks = navigation.querySelectorAll("a");
-
-        navigationLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                navigation.classList.remove("is-open");
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.setAttribute("aria-label", "Menü öffnen");
-            });
-        });
-
-    }
+(() => {
+  const button = document.getElementById('menu-toggle');
+  const menu = document.getElementById('main-navigation');
+  if (!button || !menu) return;
+  const close = () => {
+    menu.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Menü öffnen');
+    button.querySelector('span').textContent = '☰';
+  };
+  button.addEventListener('click', () => {
+    const opening = !menu.classList.contains('open');
+    menu.classList.toggle('open', opening);
+    button.setAttribute('aria-expanded', String(opening));
+    button.setAttribute('aria-label', opening ? 'Menü schließen' : 'Menü öffnen');
+    button.querySelector('span').textContent = opening ? '✕' : '☰';
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') close(); });
+  document.addEventListener('click', event => { if (!menu.contains(event.target) && !button.contains(event.target)) close(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 1000) close(); });
+})();
 
     /* =========================================
        SCROLL-REVEAL
