@@ -22,6 +22,7 @@ body {
  font-family: var(--sans);
  line-height: 1.6;
  overflow-x: hidden;
+ max-width: 100%;
 }
 img {
  max-width: 100%;
@@ -107,14 +108,14 @@ button,
  display: flex;
  gap: 12px;
  align-items: center;
- font-size: 12px;
+ font-size: 16px;
  font-weight: 700;
  line-height: 1.05;
  letter-spacing: -.02em;
  flex-shrink: 0;
 }
 .brand small {
- font-size: 9px;
+ font-size: 12px;
  font-weight: 500;
  letter-spacing: .02em;
 }
@@ -134,7 +135,7 @@ button,
  display: flex;
  gap: 24px;
  align-items: center;
- font-size: 13px;
+ font-size: 15px;
 }
 .nav a:not(.nav-cta) {
  color:#F5F5F2;
@@ -185,7 +186,7 @@ button,
 .hero {
  min-height: 390px;
  padding: 8vw 7vw 7vw;
- display: grid;
+ display: flex;
  grid-template-columns: 1.05fr .95fr;
  align-items: center;
  overflow: hidden;
@@ -193,11 +194,11 @@ button,
  background:var(--background);
 }
 .hero-copy {
- max-width: 680px;
+ max-width: 780px;
 }
 .eyebrow,
 .section-label {
- font-size: 11px;
+ font-size: 18px;
  text-transform: uppercase;
  letter-spacing: .16em;
  font-weight: 700;
@@ -281,36 +282,47 @@ h2 em {
   Unser Verein
 ========================= */
 .intro {
- background:var(--background);
+  background: var(--background);
+  width: 100%;
 }
+
 .intro-grid,
 .contact-grid {
- display: grid;
- grid-template-columns: 1fr 1fr;
- gap: 9vw;
+  display: flex;
+  width: 100%;
+  gap: 9vw;
 }
+
 .intro h2,
 .section-heading h2,
 .feature h2,
 .contact h2 {
- font-size: clamp(44px, 5.5vw, 78px);
- line-height: 1;
-/* letter-spacing: -.055em; */
- margin: 0;
+  font-size: clamp(44px, 5.5vw, 78px);
+  line-height: 1;
+  margin: 0;
+  width: 100%;
 }
+
 .large-copy {
- font-size: 18px;
- color:var(--ink);
- max-width: 600px;
+  font-size: 18px;
+  color: var(--ink);
+  width: 100%;
+  max-width: none; /* hebt die bisherige 800px-Begrenzung auf */
 }
+
 .large-copy p {
- margin-top: 0;
- margin-bottom: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: none;
 }
+
 .large-copy .text-link {
- display: inline-block;
- margin-top: 20px;
- color: var(--ink);
+  display: flex;
+  margin-top: 20px;
+  color: var(--ink);
+  width: 100%;
+  max-width: none;
 }
 /* =========================
   SECTION HEADINGS
@@ -322,7 +334,7 @@ h2 em {
  margin-bottom: 30px;
 }
 .section-heading p {
- max-width: 340px;
+ max-width: 640px;
  color: var(--muted);
  font-size: 15px;
 }
@@ -383,7 +395,7 @@ h2 em {
 }
 .satzung-text p {
  color: var(--ink);
- max-width: 550px;
+ max-width: 750px;
  margin: 0;
  font-size: 14px;
 }
