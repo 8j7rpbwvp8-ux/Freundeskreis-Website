@@ -297,9 +297,9 @@ h2 em {
 .section-heading h2,
 .feature h2,
 .contact h2 {
-  font-size: clamp(44px, 5.5vw, 78px);
+  font-size: clamp(44px, 5.5vw, 50px);
   line-height: 1;
-  margin: 0;
+  margin: 0 0 20px 0;
   width: 100%;
 }
 
@@ -348,6 +348,12 @@ h2 em {
 .vorstand-list {
  margin-top: 60px;
  border-top: 1px solid var(--line);
+}
+.vorstand-einleitung {
+ color: var(--ink);
+ max-width: 750px;
+ margin: 0;
+ font-size: 18px;
 }
 .vorstand-person {
  display: grid;
@@ -469,10 +475,10 @@ h2 em {
  background:var(--background);
 }
 .membership h2 {
- font-size: clamp(42px, 5vw, 70px);
+ font-size: clamp(42px, 5vw, 50px);
  line-height: .98;
  letter-spacing: -.055em;
- margin-top: 12px 1px 16px;
+ margin: 0 0 20px 0;
 }
 .membership h2 em {
  font-family: var(--serif);
@@ -568,7 +574,7 @@ vertical-align:middle;
 .section-heading h2,
 .feature h2,
 .contact h2 {
- font-size: clamp(44px, 5.5vw, 78px);
+ font-size: clamp(44px, 5.5vw, 50px);
  line-height: 1;
 /* letter-spacing: -.055em; */
  margin: 0;
@@ -781,6 +787,12 @@ footer {
  gap: 20px;
  color:var(--background);
  font-size: 12px;
+}
+.footer-brand {
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 .footer-bottom a:hover {
  color:var(--hover);
