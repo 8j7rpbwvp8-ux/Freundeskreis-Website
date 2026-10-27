@@ -1158,3 +1158,44 @@ footer {
  .hero-actions .button {width:100%;}
  .footer-brand {flex-wrap:wrap;}
 }
+/* =========================
+   MOBILES DROPDOWN-MENÜ
+   Nur Navigation auf Tablet/Handy
+========================= */
+@media (max-width: 1000px) {
+  .site-header { position: sticky; top: 0; }
+  .menu-toggle {
+    display: inline-flex;
+    flex: 0 0 48px;
+    color: var(--background);
+    border: 1px solid rgba(245,245,242,.5);
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    z-index: 102;
+  }
+  .menu-toggle:hover, .menu-toggle:focus-visible { background: rgba(255,255,255,.12); }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--special-background);
+    padding: 12px 5vw 20px;
+    box-shadow: 0 12px 22px rgba(0,0,0,.15);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    z-index: 101;
+  }
+  .nav.open { display: flex; }
+  .nav a:not(.nav-cta) {
+    display: flex;
+    color: var(--background);
+    font-size: 16px;
+    min-height: 48px;
+    padding: 10px 4px;
+    border-bottom: 1px solid rgba(245,245,242,.15);
+  }
+}
