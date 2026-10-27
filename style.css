@@ -284,6 +284,7 @@ h2 em {
 .intro {
   background: var(--background);
   width: 100%;
+  padding-top: 30px;
 }
 
 .intro-grid,
@@ -344,6 +345,7 @@ h2 em {
 
 .vorstand {
  background:var(--background);
+  padding-top: 30px;
 }
 .vorstand-list {
  margin-top: 60px;
@@ -468,10 +470,10 @@ h2 em {
   MITGLIEDSCHAFT
 ========================= */
 .membership {
- padding: 95px 7vw;
+ padding: 80px 7vw;
+padding-top: 30px;
  flex-direction: column;
  align-items: flex-start;
- gap: 20px;
  background:var(--background);
 }
 .membership h2 {
@@ -482,7 +484,7 @@ h2 em {
 }
 .membership h2 em {
  font-family: var(--serif);
- margin-bottom: 30px;
+ margin-bottom: 10px;
 }
 .membership-link {
  min-width: 180px;
