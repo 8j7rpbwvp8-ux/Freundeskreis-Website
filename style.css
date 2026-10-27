@@ -600,6 +600,8 @@ vertical-align:middle;
 ========================= */
 .contact {
  background:var(--background);
+ padding-top: 30px;
+ 
 }
 .contact-lead {
  color: var(--muted);
