@@ -312,14 +312,14 @@ h2 em {
 
 .large-copy p {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   width: 100%;
   max-width: none;
 }
 
 .large-copy .text-link {
   display: flex;
-  margin-top: 20px;
+  margin-top: 18px;
   color: var(--ink);
   width: 100%;
   max-width: none;
@@ -336,7 +336,7 @@ h2 em {
 .section-heading p {
  max-width: 640px;
  color: var(--muted);
- font-size: 15px;
+ font-size: 18px;
 }
 /* =========================
   VORSTAND
@@ -383,7 +383,7 @@ h2 em {
  gap: 20px;
 }
 .satzung-label {
- font-size: 10px;
+ font-size: 18px;
  text-transform: uppercase;
  letter-spacing: .15em;
  color: var(--muted);
@@ -397,7 +397,7 @@ h2 em {
  color: var(--ink);
  max-width: 750px;
  margin: 0;
- font-size: 14px;
+ font-size: 18px;
 }
 .satzung-link {
  min-width: 180px;
@@ -596,7 +596,7 @@ vertical-align:middle;
 .contact-lead {
  color: var(--muted);
  max-width: 600px;
- font-size: 16px;
+ font-size: 18px;
  margin-top: 30px;
 }
 .contact-details {
@@ -764,7 +764,7 @@ footer {
 .footer-links {
  display: flex;
  gap: 25px;
- font-size: 12px;
+ font-size: 14px;
  color:var(--background);
  flex-wrap: wrap;
 }
@@ -780,7 +780,7 @@ footer {
  justify-content: space-between;
  gap: 20px;
  color:var(--background);
- font-size: 10px;
+ font-size: 12px;
 }
 .footer-bottom a:hover {
  color:var(--hover);
@@ -956,7 +956,7 @@ footer {
    font-size: clamp(40px, 12vw, 58px);
  }
  .large-copy {
-   font-size: 16px;
+   font-size: 1large-copypx;
  }
  .section-heading {
    margin-bottom: 40px;
