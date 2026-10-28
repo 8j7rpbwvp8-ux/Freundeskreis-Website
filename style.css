@@ -585,7 +585,7 @@ vertical-align:middle;
 .large-copy {
  font-size: 18px;
  color: #4e5954;
- max-width: 600px;
+ max-width: 660px;
 }
 .large-copy p {
  margin-top: 0;
@@ -1118,46 +1118,169 @@ footer {
 }
 
 /* Nur Bildanordnung und responsive Darstellung – bestehendes Design bleibt erhalten. */
-.text-image-row {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);align-items:center;gap:clamp(20px,4vw,56px);margin:20px 0 42px;}
-.text-image-row > .large-copy {min-width:0;width:100%;max-width:none;}
-.image-placeholder {margin:0;min-width:0;}
-.image-placeholder img {display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px;}
+.text-image-row {
+	display:grid;
+	grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);
+	align-items:start;
+	gap:clamp(20px,4vw,56px);
+	margin:20px 0 42px;
+	}
+	
+.text-image-row > .large-copy {
+	min-width:0;
+	width:100%;
+	max-width:none;
+	}
+	
+.image-placeholder {
+	margin:0;
+	min-width:0;
+	}
+	
+.image-placeholder img {
+	display:block;
+	width:100%;
+	height:auto;
+	aspect-ratio:4/3;
+	object-fit:cover;
+	border-radius:18px;
+	}
+	
 @media (max-width: 1100px) {
- .menu-toggle {display:inline-flex;color:var(--background);}
- .site-header {position:sticky;}
- .nav {display:none;position:absolute;top:100%;left:0;right:0;background:var(--special-background);padding:12px 5vw 22px;flex-direction:column;align-items:stretch;gap:0;max-height:calc(100dvh - 72px);overflow-y:auto;box-shadow:0 12px 20px rgba(0,0,0,.15);}
- .nav.open {display:flex;}
- .nav a:not(.nav-cta) {font-size:16px;min-height:48px;padding:10px 6px;color:var(--background);}
- .text-image-row {grid-template-columns:minmax(0,1fr) minmax(210px,.8fr);}
+ .menu-toggle {
+ 	display:inline-flex;
+ 	color:var(--background);
+ 	}
+ .site-header {
+ 	position:sticky;
+ 	}
+ .nav {
+ 	display:none;
+ 	position:absolute;
+ 	top:100%;
+ 	left:0;
+ 	right:0;
+ 	background:var(--special-background);
+ 	padding:12px 5vw 22px;
+ 	flex-direction:column;
+ 	align-items:stretch;
+ 	gap:0;
+ 	max-height:calc(100dvh - 72px);
+ 	overflow-y:auto;
+ 	box-shadow:0 12px 20px rgba(0,0,0,.15);
+ 	}
+ .nav.open {
+ 	display:flex;
+ 	}
+ .nav a:not(.nav-cta) {
+ 	font-size:16px;
+ 	min-height:48px;
+ 	padding:10px 6px;
+ 	color:var(--background);
+ 	}
+ .text-image-row {
+ 	grid-template-columns:minmax(0,1fr) minmax(210px,.8fr);
+ 	}
 }
 @media (max-width: 760px) {
  html {scroll-padding-top:80px;}
- .site-header {height:72px;min-height:72px;}
- .hero {padding:50px 6vw;min-height:0;}
- .hero-actions {flex-wrap:wrap;gap:16px;}
- .section {padding:48px 6vw;}
- .membership {padding:48px 6vw;}
- .section-label {font-size:14px;letter-spacing:.1em;margin-bottom:24px;}
- .intro h2,.section-heading h2,.contact h2,.spende h2,.membership h2 {font-size:clamp(32px,8.5vw,48px);overflow-wrap:anywhere;}
- .large-copy {font-size:16px;line-height:1.65;}
- .text-image-row {grid-template-columns:minmax(0,1fr);gap:16px;margin:12px 0 34px;}
- .image-placeholder img {aspect-ratio:4/3;}
- .spende-grid {grid-template-columns:minmax(0,1fr);}
- .verein-satzung {display:flex;flex-direction:column;align-items:stretch;gap:18px;margin-top:0;}
- .satzung-link {width:100%;margin-top:0;}
- .membership-link {display:flex;width:100%;max-width:300px;max-height:none;}
- .footer-top {display:flex;flex-direction:column;gap:18px;}
- .footer-bottom {display:flex;flex-direction:column;gap:12px;}
- .footer-links {gap:4px 16px;}
- .contact-lead {overflow-wrap:anywhere;}
- .vorstand-person {grid-template-columns:42px minmax(0,1fr);}
- .kalender-anzeige {max-width:100%;width:100%;}
+ .site-header {
+ 	height:72px;
+ 	min-height:72px;
+ 	}
+ .hero {
+ 	padding:50px 6vw;
+ 	min-height:0;
+ 	}
+ .hero-actions {
+ 	flex-wrap:wrap;
+ 	gap:16px;
+ 	}
+ .section {
+ 	padding:48px 6vw;
+ 	}
+ .membership {
+ 	padding:48px 6vw;
+ 	}
+ .section-label {
+ 	font-size:14px;
+ 	letter-spacing:.1em;
+ 	margin-bottom:24px;
+ 	}
+ .intro h2,.section-heading h2,.contact h2,.spende h2,.membership h2 {
+ 	font-size:clamp(32px,8.5vw,48px);
+ 	overflow-wrap:anywhere;
+ 	}
+ .large-copy {
+ 	font-size:16px;
+ 	line-height:1.65;
+ 	}
+ .text-image-row {
+ 	grid-template-columns:minmax(0,1fr);
+ 	gap:16px;
+ 	margin:12px 0 34px;
+ 	}
+ .image-placeholder img {
+ 	aspect-ratio:4/3;
+ 	}
+ .spende-grid {
+ 	grid-template-columns:minmax(0,1fr);
+ 	}
+ .verein-satzung {
+ 	display:flex;
+ 	flex-direction:column;
+ 	align-items:stretch;
+ 	gap:18px;
+ 	margin-top:0;
+ 	}
+ .satzung-link {
+ 	width:100%;
+ 	margin-top:0;
+ 	}
+ .membership-link {
+ 	display:flex;
+ 	width:100%;
+ 	max-width:300px;
+ 	max-height:none;
+ 	}
+ .footer-top {
+ 	display:flex;
+ 	flex-direction:column;
+ 	gap:18px;
+ 	}
+ .footer-bottom {
+ 	display:flex;
+ 	flex-direction:column;
+ 	gap:12px;
+ 	}
+ .footer-links {
+ 	gap:4px 16px;
+ 	}
+ .contact-lead {
+ 	overflow-wrap:anywhere;
+ 	}
+ .vorstand-person {
+ 	grid-template-columns:42px minmax(0,1fr);
+ 	}
+ .kalender-anzeige {
+ 	max-width:100%;
+ 	width:100%;
+ 	}
 }
 @media (max-width:420px) {
- .hero,.section,.membership {padding-left:5vw;padding-right:5vw;}
- .hero-actions {align-items:stretch;}
- .hero-actions .button {width:100%;}
- .footer-brand {flex-wrap:wrap;}
+ .hero,.section,.membership {
+ 	padding-left:5vw;
+ 	padding-right:5vw;
+ 	}
+ .hero-actions {
+ 	align-items:stretch;
+ 	}
+ .hero-actions .button {
+ 	width:100%;
+ 	}
+ .footer-brand {
+ 	flex-wrap:wrap;
+ 	}
 }
 /* =========================
    MOBILES DROPDOWN-MENÜ test
