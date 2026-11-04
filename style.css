@@ -307,7 +307,7 @@ h2 em {
   font-size: 18px;
   color: var(--ink);
   width: 100%;
-  max-width: none; /* hebt die bisherige 800px-Begrenzung auf */
+  max-width: 680px;
 }
 
 .large-copy p {
@@ -587,7 +587,7 @@ vertical-align:middle;
 .large-copy {
  font-size: 18px;
  color: #4e5954;
- max-width: 660px;
+ max-width: 680px;
 }
 .large-copy p {
  margin-top: 0;
@@ -608,7 +608,7 @@ vertical-align:middle;
 }
 .contact-lead {
  color: var(--muted);
- max-width: 600px;
+ max-width: 660px;
  font-size: 18px;
  margin-top: 30px;
 }
@@ -638,10 +638,10 @@ vertical-align:middle;
 /* =========================
   FOOTER
 ========================= */
-footer {
+ footer {
  background:var(--special-background);
  color: var(--background);
- padding: 55px 7vw 25px;
+ padding: 55px 4vw 25px;
 }
 .footer-top {
  display: flex;
